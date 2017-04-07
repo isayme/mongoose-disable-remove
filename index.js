@@ -12,13 +12,11 @@ module.exports = function (schema) {
 
     if (isCallbackModel) {
       callback(error)
-    } else if (mongoose.Promise) {
+    } else {
       var MPromise = mongoose.Promise.ES6 || mongoose.Promise
       return new MPromise(function (resolve, reject) {
         reject(error)
       })
-    } else {
-      throw error
     }
   }
 }
