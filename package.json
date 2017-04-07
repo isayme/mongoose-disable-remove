@@ -4,7 +4,11 @@
   "description": "A plugin that will disable remove functions for mongoose models",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "pretest": "npm run lint",
+    "lint": "standard --env mocha",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "coverage": "istanbul cover _mocha --report lcovonly -- -R spec test/**/*.js && npm run coveralls"
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,14 @@
   "bugs": {
     "url": "https://github.com/isayme/mongoose-plugin-disable-remove/issues"
   },
-  "homepage": "https://github.com/isayme/mongoose-plugin-disable-remove#readme"
+  "homepage": "https://github.com/isayme/mongoose-plugin-disable-remove#readme",
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "coveralls": "^2.13.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mongoose": "^4.9.3",
+    "power-assert": "^1.4.2",
+    "standard": "^10.0.1"
+  }
 }
