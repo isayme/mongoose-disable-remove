@@ -13,8 +13,8 @@ module.exports = function (schema) {
     if (isCallbackModel) {
       callback(error)
     } else {
-      var MPromise = mongoose.Promise.ES6 || mongoose.Promise
-      return new MPromise(function (resolve, reject) {
+      var ES6Promise = mongoose.Promise.ES6
+      return new ES6Promise(function (resolve, reject) {
         reject(error)
       })
     }
