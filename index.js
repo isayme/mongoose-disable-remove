@@ -8,9 +8,9 @@ module.exports = function (schema) {
 
     var args = Array.prototype.slice.call(arguments)
     var callback = args[args.length - 1]
-    var isCallbackModel = typeof callback === 'function'
+    var isCallbackMode = typeof callback === 'function'
 
-    if (isCallbackModel) {
+    if (isCallbackMode) {
       callback(error)
     } else {
       var ES6Promise = mongoose.Promise.ES6
