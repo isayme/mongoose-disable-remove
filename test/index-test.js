@@ -14,7 +14,7 @@ describe(process.env.npm_package_name, function () {
   var errmessage = 'remove function disabled for this schema'
 
   describe('Document.remove', function () {
-    it('shuold throw with callback', function (done) {
+    it('should throw with callback', function (done) {
       var test = new Test()
       test.remove(function (err) {
         assert.ok(err instanceof Error)
@@ -48,7 +48,7 @@ describe(process.env.npm_package_name, function () {
   })
 
   describe('Model.remove', function () {
-    it('shuold throw with callback', function (done) {
+    it('should throw with callback', function (done) {
       Test.remove({}, function (err) {
         assert.ok(err instanceof Error)
         assert.ok(err.message === errmessage)
