@@ -1,6 +1,6 @@
 {
   "name": "mongoose-disable-remove",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin that will disable remove functions for mongoose models",
   "main": "index.js",
   "scripts": {
