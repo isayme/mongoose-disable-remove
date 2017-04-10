@@ -1,6 +1,6 @@
 {
-  "name": "mongoose-plugin-disable-remove",
-  "version": "0.1.1",
+  "name": "mongoose-disable-remove",
+  "version": "1.0.0",
   "description": "A plugin that will disable remove functions for mongoose models",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/isayme/mongoose-plugin-disable-remove.git"
+    "url": "git+https://github.com/isayme/mongoose-disable-remove.git"
   },
   "keywords": [
     "mongoose",
@@ -23,9 +23,9 @@
   "author": "iSayme <isaymeorg@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/isayme/mongoose-plugin-disable-remove/issues"
+    "url": "https://github.com/isayme/mongoose-disable-remove/issues"
   },
-  "homepage": "https://github.com/isayme/mongoose-plugin-disable-remove#readme",
+  "homepage": "https://github.com/isayme/mongoose-disable-remove#readme",
   "devDependencies": {
     "bluebird": "^3.5.0",
     "coveralls": "^2.13.0",
