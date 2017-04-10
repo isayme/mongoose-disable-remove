@@ -1,7 +1,7 @@
 # mongoose-disable-remove
 A plugin that will disable remove functions for mongoose models.
 
-If a schema enabled this schema, any call to `Model.remove` & `Document.remove` will return a reject promise or callback(err) if a callback provided.
+If a schema enabled this plugin, any call to `Model.remove` & `Document.remove` will return a reject promise or callback(err) if a callback provided.
 
 ![travis](https://img.shields.io/travis/isayme/mongoose-disable-remove.svg)
 [![Coverage Status](https://coveralls.io/repos/github/isayme/mongoose-disable-remove/badge.svg?branch=master)](https://coveralls.io/github/isayme/mongoose-disable-remove?branch=master)
